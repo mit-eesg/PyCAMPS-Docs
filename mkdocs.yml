@@ -1,0 +1,44 @@
+site_name: PyCAMPS
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - API Reference:
+      - Overview: api_overview.md
+      - Modules: modules.md
+      - Simulation Tools: simulation.md
+      - Miscellaneous: misc.md
+  - Examples:
+    - Basic Usage: examples/pycamps_intro.ipynb
+
+plugins:
+  - search
+  - mkdocs-jupyter
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: false
+            show_root_heading: true
+            show_category_heading: false
+            show_docstring_examples: false
