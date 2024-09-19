@@ -1,0 +1,2575 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+    
+    
+      
+        <title>Modules - PyCAMPS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pycamps.modules.Module" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PyCAMPS" class="md-header__button md-logo" aria-label="PyCAMPS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PyCAMPS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modules
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../installation/" class="md-tabs__link">
+        
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../examples/pycamps_intro.ipynb" class="md-tabs__link">
+          
+  
+  Examples
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PyCAMPS" class="md-nav__button md-logo" aria-label="PyCAMPS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PyCAMPS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/pycamps_intro.ipynb" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Modules</h1>
+
+<p>Modules are the building blocks of PyCAMPS. They are used to represent different components of a power system, such as buses, lines, and generators.
+Each module can be classified as a generator, load, wire, renewable, storage, or other system element.</p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.Module" class="doc doc-heading">
+            <code>pycamps.modules.Module</code>
+
+
+<a href="#pycamps.modules.Module" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+
+
+        <p>This module serves as a superclass to all dynamic component modules in the power system. </p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.ModuleName">ModuleName</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.RefFrameAngle">RefFrameAngle</span></code></td>
+            <td>
+                  <code>Symbol</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angular position of the DQ reference frame.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.RefFrameSpeed">RefFrameSpeed</span></code></td>
+            <td>
+                  <code>Symbol</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angular speed of the DQ reference frame.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.BaseSpeed">BaseSpeed</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system (inverse of time units).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.ParameterMap">ParameterMap</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values or functions.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.Parameters">Parameters</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A matrix of symbolic parameters for the module (inductances, capacitances, etc).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.ControllerGains">ControllerGains</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Gains of controllers.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.SetPoints">SetPoints</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Set points for controllers.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.StateVariables">StateVariables</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A matrix of symbolic state variables for the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.StateSpaceEquations">StateSpaceEquations</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A matrix of state space equations.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.StateVariableDerivatives">StateVariableDerivatives</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A matrix of derivatives of state variables.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortInputs">PortInputs</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Inputs to the module from other modules.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortStates">PortStates</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>States of the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortVoltages">PortVoltages</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Voltages at the ports.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortCurrents">PortCurrents</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Currents at the ports.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortStates_Time">PortStates_Time</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Time-dependent states of the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortStateDerivatives">PortStateDerivatives</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Derivatives of the port states.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.PortOutputTypes">PortOutputTypes</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Types of outputs from the ports (current or charge).</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.ControllableInputs">ControllableInputs</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Inputs that can be controlled, typically for passivity-based control.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.InternalInputs">InternalInputs</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Inputs that are internal to the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.ControlInputEquations">ControlInputEquations</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Mathematical equations for controllable inputs.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.InternalEquations">InternalEquations</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Internal equations of the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.DesiredStateVariables">DesiredStateVariables</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Desired state variables for underactuated systems.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.DesiredStateVariableDerivatives">DesiredStateVariableDerivatives</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Derivatives of the desired state variables.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.DesiredStateSpace">DesiredStateSpace</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Desired state space representation.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.SetPointOutputs">SetPointOutputs</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Outputs that are sent to another module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.SetPointOutputEquations">SetPointOutputEquations</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Equations for set point outputs.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.GTemp">GTemp</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Temporary matrix for calculations.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.Units">Units</span></code></td>
+            <td>
+                  <code>list of str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The units of the state variables, which depend on the base speed.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.Data">Data</span></code></td>
+            <td>
+                  <code>Matrix</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Additional data related to the module.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="pycamps.modules.Module.StateSpace">StateSpace</span></code></td>
+            <td>
+                  <code><span title="pycamps.modules.module.Module.StateSpace">StateSpace</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>State space representation of the module.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><h2 id="generators">Generators<a class="headerlink" href="#generators" title="Permanent link">&para;</a></h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.SMOneAxis" class="doc doc-heading">
+            <code>pycamps.modules.SMOneAxis</code>
+
+
+<a href="#pycamps.modules.SMOneAxis" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents the one axis model of synchronous machine.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">SMOneAxis</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">sm</span> <span class="o">=</span> <span class="n">SMOneAxis</span><span class="p">(</span><span class="s1">&#39;G1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.Type4_1" class="doc doc-heading">
+            <code>pycamps.modules.Type4_1</code>
+
+
+<a href="#pycamps.modules.Type4_1" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a standard Type 4-1 model of a synchronous machine.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">Type4_1</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">sm</span> <span class="o">=</span> <span class="n">Type4_1</span><span class="p">(</span><span class="s1">&#39;G1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.Type4_1Gc" class="doc doc-heading">
+            <code>pycamps.modules.Type4_1Gc</code>
+
+
+<a href="#pycamps.modules.Type4_1Gc" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a standard Type 4-1 model of a synchronous machine with governor control.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">Type4_1Gc</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">sm</span> <span class="o">=</span> <span class="n">Type4_1Gc</span><span class="p">(</span><span class="s1">&#39;G1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.Type4_2" class="doc doc-heading">
+            <code>pycamps.modules.Type4_2</code>
+
+
+<a href="#pycamps.modules.Type4_2" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a standard Type 4-2 model of a synchronous machine.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">Type4_2</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">sm</span> <span class="o">=</span> <span class="n">Type4_2</span><span class="p">(</span><span class="s1">&#39;G1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.Type4_2Ec" class="doc doc-heading">
+            <code>pycamps.modules.Type4_2Ec</code>
+
+
+<a href="#pycamps.modules.Type4_2Ec" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a standard Type 4-2 model of a synchronous machine with excitation control.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">Type4_2Ec</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">sm</span> <span class="o">=</span> <span class="n">Type4_2Ec</span><span class="p">(</span><span class="s1">&#39;G1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.SM7StateControl" class="doc doc-heading">
+            <code>pycamps.modules.SM7StateControl</code>
+
+
+<a href="#pycamps.modules.SM7StateControl" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a synchronous machine with the seven state variables and control.
+WARNING: This module is still under development and is not yet functional</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <blockquote>
+<blockquote>
+<blockquote>
+<p>from sympy import symbols
+from pycamps.modules import SM7StateControl
+sm = SM7StateControl('G1', RefFrameAngle=symbols('phi'), RefFrameSpeed=symbols('dphidt'), BaseSpeed=377)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">SM7StateControl</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">sm</span> <span class="o">=</span> <span class="n">SM7StateControl</span><span class="p">(</span><span class="s1">&#39;G22&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="loads">Loads<a class="headerlink" href="#loads" title="Permanent link">&para;</a></h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.PQLoad" class="doc doc-heading">
+            <code>pycamps.modules.PQLoad</code>
+
+
+<a href="#pycamps.modules.PQLoad" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a PQ load in a power system.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">PQLoad</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">load</span> <span class="o">=</span> <span class="n">PQLoad</span><span class="p">(</span><span class="s1">&#39;L1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.RLLoad" class="doc doc-heading">
+            <code>pycamps.modules.RLLoad</code>
+
+
+<a href="#pycamps.modules.RLLoad" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a constant impedance load with resistance and inductance.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">RLLoad</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">load</span> <span class="o">=</span> <span class="n">RLLoad</span><span class="p">(</span><span class="s1">&#39;L1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="wires">Wires<a class="headerlink" href="#wires" title="Permanent link">&para;</a></h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.LongLine" class="doc doc-heading">
+            <code>pycamps.modules.LongLine</code>
+
+
+<a href="#pycamps.modules.LongLine" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a long transmission line model with resistance, capacitance, and inductances.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">LongLine</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">long_line</span> <span class="o">=</span> <span class="n">LongLine</span><span class="p">(</span><span class="s1">&#39;TL_1_2&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.ShortLine" class="doc doc-heading">
+            <code>pycamps.modules.ShortLine</code>
+
+
+<a href="#pycamps.modules.ShortLine" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a short transmission line model with series impedance.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">ShortLine</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="n">line</span> <span class="o">=</span> <span class="n">ShortLine</span><span class="p">(</span><span class="s1">&#39;TL_1_2&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="renewables">Renewables<a class="headerlink" href="#renewables" title="Permanent link">&para;</a></h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.PVSOAControl" class="doc doc-heading">
+            <code>pycamps.modules.PVSOAControl</code>
+
+
+<a href="#pycamps.modules.PVSOAControl" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a solar PV model with SOA control.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">PVSOAControl</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">pv</span> <span class="o">=</span> <span class="n">PVSOAControl</span><span class="p">(</span><span class="s1">&#39;PV1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.PVSOAControlV2" class="doc doc-heading">
+            <code>pycamps.modules.PVSOAControlV2</code>
+
+
+<a href="#pycamps.modules.PVSOAControlV2" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents a solar PV model with SOA control.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>Mode</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The mode of operation. Defaults to 'PQ'. Options are 'PQ' or 'Vt'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>&#39;PQ&#39;</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">PVSOAControlV2</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="n">pv</span> <span class="o">=</span> <span class="n">PVSOAControlV2</span><span class="p">(</span><span class="s1">&#39;PV1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h2>
+<p>Coming soon!</p>
+<h2 id="system-elements">System Elements<a class="headerlink" href="#system-elements" title="Permanent link">&para;</a></h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pycamps.modules.InfBus" class="doc doc-heading">
+            <code>pycamps.modules.InfBus</code>
+
+
+<a href="#pycamps.modules.InfBus" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pycamps.modules.module.Module" href="../#pycamps.modules.Module">Module</a></code></p>
+
+
+        <p>Represents an infinite bus with a constant voltage source and series impedance.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>IndexName</code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A unique identifier for the module. This is used to create names for parameters and state variables.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameAngle</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The angle of the reference frame. Defaults to a symbolic variable 'phi' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>RefFrameSpeed</code></td>
+            <td>
+                  <code>Optional[Symbol]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The speed of the reference frame. Defaults to a symbolic variable 'dphidt' if not provided.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>BaseSpeed</code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The base speed of the system. Defaults to 1. This affects the units of the state variables.</p>
+              </div>
+            </td>
+            <td>
+                  <code>1</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>ParamMap</code></td>
+            <td>
+                  <code>Optional[dict]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A dictionary mapping parameter names to their values. Keys should be in the format '[ParameterName]_IndexName'.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p>Example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>    <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">InfBus</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">inf_bus</span> <span class="o">=</span> <span class="n">InfBus</span><span class="p">(</span><span class="s1">&#39;Bus1&#39;</span><span class="p">,</span> <span class="n">BaseSpeed</span><span class="o">=</span><span class="mi">377</span><span class="p">)</span>
+</code></pre></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

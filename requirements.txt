@@ -1,4 +1,0 @@
-pycamps
-mkdocs
-mkdocs-jupyter
-mkdocstrings
