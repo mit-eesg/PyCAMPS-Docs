@@ -9,22 +9,18 @@
       
       
       
-        <link rel="prev" href="../modules/">
       
       
-        <link rel="next" href="../misc/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>Simulation Tools - PyCAMPS</title>
+        <title>Simulation - PyCAMPS</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -43,9 +39,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#simulation-tools" class="md-skip">
+        <a href="#pycamps.simulation.power_system.PowerSystem" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +74,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="PyCAMPS" class="md-header__button md-logo" aria-label="PyCAMPS" data-md-component="logo">
+    <a href="../.." title="PyCAMPS" class="md-header__button md-logo" aria-label="PyCAMPS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Simulation Tools
+              Simulation
             
           </span>
         </div>
@@ -169,7 +165,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -186,7 +182,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../installation/" class="md-tabs__link">
+      <a href="../../installation/" class="md-tabs__link">
         
   
     
@@ -201,20 +197,17 @@
         
   
   
-    
   
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
   
     
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../api_overview/" class="md-tabs__link">
-          
   
   API Reference
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -225,7 +218,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../examples/pycamps_intro/" class="md-tabs__link">
+        <a href="../../examples/pycamps_intro.ipynb" class="md-tabs__link">
           
   
   Examples
@@ -260,7 +253,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="PyCAMPS" class="md-nav__button md-logo" aria-label="PyCAMPS" data-md-component="logo">
+    <a href="../.." title="PyCAMPS" class="md-nav__button md-logo" aria-label="PyCAMPS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -278,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -298,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,339 +308,18 @@
       
   
   
-    
   
   
-  
-    
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
         
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
   
   <span class="md-ellipsis">
     API Reference
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            API Reference
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api_overview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Modules
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Simulation Tools
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Simulation Tools
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pycamps.simulation.PowerSystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      PowerSystem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dynamics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dynamics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics.get_required_parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      get_required_parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics.linearized_analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      linearized_analysis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics.load_new_params" class="md-nav__link">
-    <span class="md-ellipsis">
-      load_new_params
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics.save_dynamics" class="md-nav__link">
-    <span class="md-ellipsis">
-      save_dynamics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics.simulate_trajectory" class="md-nav__link">
-    <span class="md-ellipsis">
-      simulate_trajectory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.Dynamics.solve_equilibrium" class="md-nav__link">
-    <span class="md-ellipsis">
-      solve_equilibrium
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace" class="md-nav__link">
-    <span class="md-ellipsis">
-      StateSpace
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="StateSpace">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.__eq__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __eq__
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.__str__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __str__
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.from_module" class="md-nav__link">
-    <span class="md-ellipsis">
-      from_module
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.from_power_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      from_power_system
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.print_equations" class="md-nav__link">
-    <span class="md-ellipsis">
-      print_equations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.print_vector_x" class="md-nav__link">
-    <span class="md-ellipsis">
-      print_vector_x
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.write_equations" class="md-nav__link">
-    <span class="md-ellipsis">
-      write_equations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pycamps.simulation.StateSpace.write_vector_x" class="md-nav__link">
-    <span class="md-ellipsis">
-      write_vector_x
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../misc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Miscellaneous
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -671,7 +343,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -699,11 +373,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/pycamps_intro/" class="md-nav__link">
+      <a href="../../examples/pycamps_intro.ipynb" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Intro to PyCAMPS
+    Basic Usage
   </span>
   
 
@@ -735,18 +409,17 @@
                   
 
 
-<h1 id="simulation-tools"><code>Simulation Tools</code></h1>
-
+  <h1>Simulation</h1>
 
 <div class="doc doc-object doc-class">
 
 
 
-<h2 id="pycamps.simulation.PowerSystem" class="doc doc-heading">
-            <code>pycamps.simulation.PowerSystem</code>
+<h3 id="pycamps.simulation.power_system.PowerSystem" class="doc doc-heading">
+            <code>pycamps.simulation.power_system.PowerSystem</code>
 
 
-</h2>
+<a href="#pycamps.simulation.power_system.PowerSystem" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents first">
@@ -823,7 +496,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.Units">Units</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.Units">Units</span></code></td>
             <td>
                   <code>list</code>
             </td>
@@ -834,7 +507,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.StateSpace">StateSpace</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.StateSpace">StateSpace</span></code></td>
             <td>
                   <code><span title="pycamps.simulation.power_system.PowerSystem.StateSpace">StateSpace</span></code>
             </td>
@@ -845,7 +518,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.KCLEquations">KCLEquations</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.KCLEquations">KCLEquations</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -856,7 +529,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.G">G</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.G">G</span></code></td>
             <td>
                   <code>ndarray</code>
             </td>
@@ -867,7 +540,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.StateVariableDerivatives">StateVariableDerivatives</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.StateVariableDerivatives">StateVariableDerivatives</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -878,7 +551,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.StateSpaceEquations">StateSpaceEquations</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.StateSpaceEquations">StateSpaceEquations</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -889,7 +562,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.DesiredStateVariableDerivatives">DesiredStateVariableDerivatives</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.DesiredStateVariableDerivatives">DesiredStateVariableDerivatives</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -900,7 +573,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.DesiredStateSpace">DesiredStateSpace</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.DesiredStateSpace">DesiredStateSpace</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -911,7 +584,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.ControllableInputs">ControllableInputs</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.ControllableInputs">ControllableInputs</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -922,7 +595,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.InternalInputs">InternalInputs</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.InternalInputs">InternalInputs</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -933,7 +606,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.ControlInputEquations">ControlInputEquations</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.ControlInputEquations">ControlInputEquations</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -944,7 +617,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.SetPointOutputs">SetPointOutputs</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.SetPointOutputs">SetPointOutputs</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -955,7 +628,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.SetPointOutputEquations">SetPointOutputEquations</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.SetPointOutputEquations">SetPointOutputEquations</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -966,7 +639,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.StateVariables">StateVariables</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.StateVariables">StateVariables</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -977,7 +650,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.DesiredStateVariables">DesiredStateVariables</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.DesiredStateVariables">DesiredStateVariables</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -988,7 +661,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.InternalEquations">InternalEquations</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.InternalEquations">InternalEquations</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -999,7 +672,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.Parameters">Parameters</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.Parameters">Parameters</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -1010,7 +683,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.SetPoints">SetPoints</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.SetPoints">SetPoints</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -1021,7 +694,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.PowerSystem.ControllerGains">ControllerGains</span></code></td>
+            <td><code><span title="pycamps.simulation.power_system.PowerSystem.ControllerGains">ControllerGains</span></code></td>
             <td>
                   <code>Matrix</code>
             </td>
@@ -1056,10 +729,15 @@
 </div><p>Example:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    <span class="kn">from</span> <span class="nn">pycamps.simulation</span> <span class="kn">import</span> <span class="n">PowerSystem</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="kn">from</span> <span class="nn">pycamps.modules</span> <span class="kn">import</span> <span class="n">ShortLine</span><span class="p">,</span> <span class="n">SMOneAxis</span><span class="p">,</span> <span class="n">PQLoad</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">modules</span> <span class="o">=</span> <span class="p">[</span><span class="n">ShortLine</span><span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="n">SMOneAxis</span><span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="n">PQLoad</span><span class="p">(</span><span class="o">...</span><span class="p">)]</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">buses</span> <span class="o">=</span> <span class="p">[[(</span><span class="n">modules</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;L&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">modules</span><span class="p">[</span><span class="mi">1</span><span class="p">])],</span> <span class="p">[(</span><span class="n">modules</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;R&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">modules</span><span class="p">[</span><span class="mi">2</span><span class="p">])]]</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">ps</span> <span class="o">=</span> <span class="n">PowerSystem</span><span class="p">(</span><span class="s2">&quot;MyPowerSystem&quot;</span><span class="p">,</span> <span class="n">modules</span><span class="p">,</span> <span class="n">buses</span><span class="p">)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">ps</span><span class="o">.</span><span class="n">StateSpaceEquations</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="c1"># Create modules like you normally would    </span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">modules</span> <span class="o">=</span> <span class="p">[</span><span class="n">ShortLine</span><span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="n">SMOneAxis</span><span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="n">PQLoad</span><span class="p">(</span><span class="o">...</span><span class="p">)]</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="c1"># Create and connect buses using the following format:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="c1"># [[(non-wire1), (wire1, &#39;terminal&#39;)],</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="c1">#  [(non-wire2), (wire1, &#39;other_terminal&#39;)]]</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">buses</span> <span class="o">=</span> <span class="p">[[(</span><span class="n">modules</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;L&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">modules</span><span class="p">[</span><span class="mi">1</span><span class="p">])],</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>     <span class="p">[(</span><span class="n">modules</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;R&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">modules</span><span class="p">[</span><span class="mi">2</span><span class="p">])]]</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">ps</span> <span class="o">=</span> <span class="n">PowerSystem</span><span class="p">(</span><span class="s2">&quot;MyPowerSystem&quot;</span><span class="p">,</span> <span class="n">modules</span><span class="p">,</span> <span class="n">buses</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">ps</span><span class="o">.</span><span class="n">StateSpaceEquations</span><span class="p">)</span>
 </code></pre></div></p>
 
 
@@ -1067,11 +745,11 @@
 
 
 
-<h2 id="pycamps.simulation.Dynamics" class="doc doc-heading">
-            <code>pycamps.simulation.Dynamics</code>
+<h3 id="pycamps.simulation.dynamics.Dynamics" class="doc doc-heading">
+            <code>pycamps.simulation.dynamics.Dynamics</code>
 
 
-</h2>
+<a href="#pycamps.simulation.dynamics.Dynamics" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents first">
@@ -1094,7 +772,7 @@
           <tr class="doc-section-item">
             <td><code>power_system</code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="pycamps.simulation.power_system.PowerSystem" href="#pycamps.simulation.PowerSystem">PowerSystem</a></code>
+                  <code><span title="pycamps.simulation.PowerSystem">PowerSystem</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1120,9 +798,9 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.Dynamics.PS">PS</span></code></td>
+            <td><code><span title="pycamps.simulation.dynamics.Dynamics.PS">PS</span></code></td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="pycamps.simulation.power_system.PowerSystem" href="#pycamps.simulation.PowerSystem">PowerSystem</a></code>
+                  <code><span title="pycamps.simulation.PowerSystem">PowerSystem</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1131,7 +809,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.Dynamics.params">params</span></code></td>
+            <td><code><span title="pycamps.simulation.dynamics.Dynamics.params">params</span></code></td>
             <td>
                   <code>dict</code>
             </td>
@@ -1142,7 +820,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.Dynamics.input_states">input_states</span></code></td>
+            <td><code><span title="pycamps.simulation.dynamics.Dynamics.input_states">input_states</span></code></td>
             <td>
                   <code>list</code>
             </td>
@@ -1153,7 +831,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.Dynamics.input_equations">input_equations</span></code></td>
+            <td><code><span title="pycamps.simulation.dynamics.Dynamics.input_equations">input_equations</span></code></td>
             <td>
                   <code>list</code>
             </td>
@@ -1164,7 +842,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="pycamps.simulation.Dynamics.required_params">required_params</span></code></td>
+            <td><code><span title="pycamps.simulation.dynamics.Dynamics.required_params">required_params</span></code></td>
             <td>
                   <code>dict</code>
             </td>
@@ -1193,10 +871,10 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.Dynamics.get_required_parameters" class="doc doc-heading">
+<h4 id="pycamps.simulation.dynamics.Dynamics.get_required_parameters" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">get_required_parameters</span><span class="p">()</span></code>
 
-</h3>
+<a href="#pycamps.simulation.dynamics.Dynamics.get_required_parameters" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1233,10 +911,10 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.Dynamics.linearized_analysis" class="doc doc-heading">
+<h4 id="pycamps.simulation.dynamics.Dynamics.linearized_analysis" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">linearized_analysis</span><span class="p">(</span><span class="n">xf</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.dynamics.Dynamics.linearized_analysis" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1335,10 +1013,10 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.Dynamics.load_new_params" class="doc doc-heading">
+<h4 id="pycamps.simulation.dynamics.Dynamics.load_new_params" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">load_new_params</span><span class="p">(</span><span class="n">params_directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">custom_module_files</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">params_dictionary</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">reference_frame</span><span class="o">=</span><span class="p">{</span><span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;dphidt&#39;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;phi&#39;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span> <span class="mi">0</span><span class="p">})</span></code>
 
-</h3>
+<a href="#pycamps.simulation.dynamics.Dynamics.load_new_params" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1446,10 +1124,10 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.Dynamics.save_dynamics" class="doc doc-heading">
+<h4 id="pycamps.simulation.dynamics.Dynamics.save_dynamics" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">save_dynamics</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.dynamics.Dynamics.save_dynamics" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1492,10 +1170,10 @@
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.Dynamics.simulate_trajectory" class="doc doc-heading">
+<h4 id="pycamps.simulation.dynamics.Dynamics.simulate_trajectory" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">simulate_trajectory</span><span class="p">(</span><span class="n">xf</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">simulation_time</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;trapezoid_adaptive&#39;</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.dynamics.Dynamics.simulate_trajectory" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1623,10 +1301,10 @@ Supported methods are 'trapezoid_adaptive', 'LSODA', 'RK45', 'RK23', 'DOP853', '
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.Dynamics.solve_equilibrium" class="doc doc-heading">
+<h4 id="pycamps.simulation.dynamics.Dynamics.solve_equilibrium" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">solve_equilibrium</span><span class="p">(</span><span class="n">x0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;fsolve&#39;</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.dynamics.Dynamics.solve_equilibrium" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -1750,13 +1428,13 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 
 </div><p>Example:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    <span class="kn">from</span> <span class="nn">pycamps.simulation</span> <span class="kn">import</span> <span class="n">PowerSystem</span><span class="p">,</span> <span class="n">Dynamics</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">ps</span> <span class="o">=</span> <span class="n">PowerSystem</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">ps</span> <span class="o">=</span> <span class="n">PowerSystem</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="c1"># Create power system like normal</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">dynamics</span> <span class="o">=</span> <span class="n">Dynamics</span><span class="p">(</span><span class="n">ps</span><span class="p">)</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">dynamics</span><span class="o">.</span><span class="n">get_required_parameters</span><span class="p">())</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">dynamics</span><span class="o">.</span><span class="n">load_new_params</span><span class="p">(</span><span class="n">params_directory</span><span class="o">=</span><span class="s1">&#39;params/&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">dynamics</span><span class="o">.</span><span class="n">load_new_params</span><span class="p">(</span><span class="n">params_directory</span><span class="o">=</span><span class="s1">&#39;path/to/params/&#39;</span><span class="p">)</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">equilibrium</span> <span class="o">=</span> <span class="n">dynamics</span><span class="o">.</span><span class="n">solve_equilibrium</span><span class="p">()</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">time</span><span class="p">,</span> <span class="n">states</span> <span class="o">=</span> <span class="n">dynamics</span><span class="o">.</span><span class="n">simulate_trajectory</span><span class="p">()</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">sub_pf</span><span class="p">,</span> <span class="n">states</span> <span class="o">=</span> <span class="n">dynamics</span><span class="o">.</span><span class="n">linearized_analysis</span><span class="p">()</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">A</span><span class="p">,</span> <span class="n">sub_pf</span><span class="p">,</span> <span class="n">states</span> <span class="o">=</span> <span class="n">dynamics</span><span class="o">.</span><span class="n">linearized_analysis</span><span class="p">()</span>
 </code></pre></div></p>
 
 
@@ -1764,11 +1442,11 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 
 
 
-<h2 id="pycamps.simulation.StateSpace" class="doc doc-heading">
-            <code>pycamps.simulation.StateSpace</code>
+<h3 id="pycamps.simulation.state_space.StateSpace" class="doc doc-heading">
+            <code>pycamps.simulation.state_space.StateSpace</code>
 
 
-</h2>
+<a href="#pycamps.simulation.state_space.StateSpace" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents first">
@@ -2003,10 +1681,10 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.__eq__" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.__eq__" class="doc doc-heading">
             <code class="highlight language-python"><span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.__eq__" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2020,10 +1698,10 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.__str__" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.__str__" class="doc doc-heading">
             <code class="highlight language-python"><span class="fm">__str__</span><span class="p">()</span></code>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.__str__" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2037,14 +1715,15 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.from_module" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.from_module" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">from_module</span><span class="p">(</span><span class="n">module</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-cached"><code>cached</code></small>
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.from_module" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2058,14 +1737,14 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.from_power_system" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.from_power_system" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">from_power_system</span><span class="p">(</span><span class="n">PS</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.from_power_system" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2079,10 +1758,10 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.print_equations" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.print_equations" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">print_equations</span><span class="p">()</span></code>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.print_equations" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2096,10 +1775,10 @@ Supported methods are 'fsolve', 'hybr', 'lm', 'broyden1', 'broyden2', 'anderson'
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.print_vector_x" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.print_vector_x" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">print_vector_x</span><span class="p">()</span></code>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.print_vector_x" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2115,10 +1794,10 @@ vector (x) into the respective state variables.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.write_equations" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.write_equations" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">write_equations</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.write_equations" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2132,10 +1811,10 @@ vector (x) into the respective state variables.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pycamps.simulation.StateSpace.write_vector_x" class="doc doc-heading">
+<h4 id="pycamps.simulation.state_space.StateSpace.write_vector_x" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">write_vector_x</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h3>
+<a href="#pycamps.simulation.state_space.StateSpace.write_vector_x" class="headerlink" title="Permanent link">&para;</a></h4>
 
 
     <div class="doc doc-contents ">
@@ -2156,7 +1835,7 @@ of the vector (x) into the respective state variables.</p>
 
 </div><p>Example:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    <span class="kn">from</span> <span class="nn">pycamps.simulation</span> <span class="kn">import</span> <span class="n">StateSpace</span><span class="p">,</span> <span class="n">PowerSystem</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">ps</span> <span class="o">=</span> <span class="n">PowerSystem</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">ps</span> <span class="o">=</span> <span class="n">PowerSystem</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="c1"># Create power system like normal</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">ss</span> <span class="o">=</span> <span class="n">StateSpace</span><span class="o">.</span><span class="n">from_power_system</span><span class="p">(</span><span class="n">ps</span><span class="p">)</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">ss</span><span class="o">.</span><span class="n">print_equations</span><span class="p">()</span>
 </code></pre></div></p>
@@ -2208,10 +1887,10 @@ of the vector (x) into the respective state variables.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
